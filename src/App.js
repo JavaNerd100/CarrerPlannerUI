@@ -10,7 +10,7 @@ function App() {
   const handleSearch = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8080/plan?career=${encodeURIComponent(career)}`);
+      const response = await fetch(`https://c-planner-app-a71b08d44f2a.herokuapp.com/plan?career=${encodeURIComponent(career)}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
